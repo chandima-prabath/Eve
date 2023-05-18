@@ -52,7 +52,7 @@ function Eve() {
 
   return (
     <SafeAreaView style={styles.container}>
-      <ImageBackground style={{height:"100%"}} source={require("../assets/images/eve.jpg")}>
+      <ImageBackground style={{height:"100%",}} source={require("../assets/images/eve.jpg")}>
       <ScrollView
         style={styles.scrollView}
         contentContainerStyle={styles.scrollViewContent}
@@ -113,7 +113,10 @@ const styles = StyleSheet.create({
     paddingTop: 5,
     paddingBottom: 5,
     backgroundColor: 'rgba(110,130,230,.8)',
-    borderRadius: 10,
+    borderBottomRightRadius:30,
+    borderTopLeftRadius:0,
+    borderTopRightRadius:30,
+    borderBottomLeftRadius:30,
     borderColor: 'rgb(100,100,255)',
     borderWidth:1
   },
@@ -135,7 +138,7 @@ const styles = StyleSheet.create({
     color: 'rgb(50,50,50)',
     textAlign: 'left',
     fontStyle: 'italic',
-    maxWidth:"90%"
+    maxWidth:"87%"
   },
   inputContainer: {
     flexDirection: 'row',

@@ -7,6 +7,7 @@ import Login from '../screens/auth/Login';
 import Forget from '../screens/auth/Forget';
 import Splash from '../screens/splash/splash';
 import Eve from '../screens/eve';
+import About from '../screens/About';
 
 const Stack = createNativeStackNavigator();
 
@@ -28,6 +29,7 @@ function AppRouter() {
         <Stack.Screen options={{headerShown:false}} name="Forget" component={Forget} />
         <Stack.Screen options={{headerShown:false}} name="Splash" component={Splash} />
         <Stack.Screen options={{headerShown:false}} name="Eve" component={Eve} />
+        <Stack.Screen options={{headerShown:false}} name="About" component={About} />
       </Stack.Navigator>
     </NavigationContainer>
   );
